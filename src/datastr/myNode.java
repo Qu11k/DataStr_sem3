@@ -1,12 +1,12 @@
 package datastr;
 
 public class myNode <Ttype> {
-	//1.mainīgie
+	//1.
 	private Ttype element;
 	private myNode rightChildNode = null;
 	private myNode leftChildNode = null;
 	private myNode parentNode = null;
-	//2. getters
+	//2. get
 	public Ttype getElement() {
 		return element;
 	}
@@ -23,7 +23,7 @@ public class myNode <Ttype> {
 		return parentNode;
 	}
 
-	//3.setters
+	//3.set
 	public void setElement(Ttype element) {
 		if(element != null) {
 			this.element = element;
@@ -48,11 +48,11 @@ public class myNode <Ttype> {
 	}
 	
 	//4. konstruktors
-	public MyNode (Ttype element) {
+	public myNode (Ttype element) {
 		setElement(element);
 	}
 	
-	//5.toString
+	//5.tostring
 	public String toString() {
 		return ""+element;
 	}
